@@ -1,0 +1,282 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+
+}
+
+
+/* Navbar */
+
+#navbarSupportedContent{
+    width: fit-content !important;
+ } 
+
+.navbar-nav {
+    margin: 0px 50px 0px 100px;
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+.nav-item{
+    padding: 0px 20px;
+
+}
+
+
+/* Carousel */
+.carousel-item img{
+    height: 580px;
+    margin-bottom: 50px;
+}
+
+.carousel-caption{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-caption h2{
+    font-size: 500%;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 15px #000;
+}
+
+.carousel-caption h4{
+    font-size: 200%;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px #0000;
+    text-transform: uppercase;
+
+}
+/* Main Content */
+
+#menu-tile, #specials-tile, #map-tile{
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid #3F0C1F;
+    overflow: hidden;
+}
+
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover{
+    box-shadow: 0 1px 5px 1px #CCCCCC ;
+}
+
+#menu-tile{
+    background: url('https://source.unsplash.com/350x250/?burger,pasta,veg,non-veg,macaroni') no-repeat;
+    background-position: center;
+}
+
+
+#specials-tile{
+    background: url('https://source.unsplash.com/350x250/?panner,panner-dish,noodles,sandwich') no-repeat;
+    background-position: center;
+}
+
+#menu-tile span, #specials-tile span, #map-tile span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: 0.8;
+}
+
+
+/* Social */
+#social-network{
+    font-size: 2.5em;
+    margin-top: 25px;
+    margin-bottom: 20x;
+}
+.social a{
+    font-size: 5.5em;
+    padding: 3.5rem;
+}
+.fa-facebook{
+    color: #3b5998;
+}
+
+.fa-whatsapp{
+    color: #25D366;
+}
+.fa-envelope{
+    color: red;
+}
+.fa-mobile{
+    color: black;
+}
+
+.fa-facebook:hover, .fa-whatsapp:hover, .fa-envelope:hover, .fa-mobile:hover{
+    color:grey;
+
+}
+
+
+/* Footer */
+
+footer{
+    background-color: #1c221b;
+    color: #d5d5d5;
+    margin-top: 4rem;
+    padding-top: 2rem;
+}
+
+hr.light{
+    border-top: 1px solid grey;
+    width: 50%;
+}
+
+hr.last{
+    width:75%;
+}
+
+.add{
+    margin-bottom: 0px;
+}
+
+form{
+    position: relative;
+    top: 45%;
+    left: 50%;
+    width: 75%;
+    transform: translate(-50%,-50%);
+    margin-bottom: 30px ;
+}
+
+/* media queries */
+
+@media(min-width:993px) and (max-width:1067px)
+{
+    #logo{
+        width: 220px;
+    }
+    .navbar-nav {
+        margin: 0px 30px 0px 70px;
+        font-size: 1rem;
+        font-weight: 800;
+    }
+    
+}
+
+
+@media(max-width:995px) and (min-width:763px)
+{
+    #logo{
+        width: 200px;
+    }
+    .social a{
+        font-size: 4em;
+        padding: 2rem;
+    }
+    .navbar-nav {
+        margin: 0px 10px 0px 10px;
+        font-size: 1rem;
+        font-weight: 1000;
+    }
+    
+    .nav-item{
+        padding: 0px 17px;
+    
+    }
+    .email{
+        font-size: 12px;
+    }
+}
+
+
+@media(max-width:762px)
+{    
+    #logo{
+        width: 180px;
+    }
+
+    .social a{
+        font-size: 2.5em;
+        padding: 1.2rem;
+    }
+
+    .carousel-caption{
+        top: 40%;
+    }
+    
+    .carousel-caption h2
+    {
+        font-size: 350%;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 15px #000;
+    }
+    
+    .carousel-caption h4{
+        font-size: 140%;
+        font-weight: 400;
+        padding-bottom: 0.2rem;
+    
+    }
+
+    .navbar-nav {
+        margin: 0px 7px 0px 10px;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    
+    .nav-item{
+        padding: 0px 7px;
+    
+    }
+
+    #contact{
+        margin: 50px;
+    }
+
+    form{
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        margin-bottom: 60px ;
+    }
+    
+
+}
+
+@media(max-width:576px)
+{
+    #logo{
+        width: 160px;
+    }
+
+    .carousel-caption
+    {
+        top: 40%;
+    }
+    
+    .carousel-caption h2
+    {
+        font-size: 250%;       
+    }
+    
+    .carousel-caption h4{
+        font-size: 110%;
+        font-weight: 300;
+        padding-bottom: 0.2rem;    
+    }
+
+    .carousel-indictors{
+        display: none;
+    }
+
+    
+    .social a{
+        font-size: 2em;
+        padding: 0.7rem;
+    }
+
+
+}
+
